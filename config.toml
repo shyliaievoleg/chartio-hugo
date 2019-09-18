@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Chartio Hugo with Netlify CMS"
+disableKinds = ["taxonomy", "taxonomyTerm"]

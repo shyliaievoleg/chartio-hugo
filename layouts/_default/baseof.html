@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {{ $title := site.Title }}
+    {{ if not .IsHome }}
+      {{ $title = printf "%s | %s" .Title site.Title }}
+    {{ end }}
+    <title>
+      {{ $title }}
+    </title>
+  </head>
+  <body>
+    <!-- Header -->
+    {{ partial "header/header.html" . }}
+
+    <main>
+      {{ block "main" . }}
+
+      {{ end }}
+    </main>
+
+    <!-- Footer -->
+    {{ partial "footer/footer.html" . }}
+
+  </body>
+</html>
