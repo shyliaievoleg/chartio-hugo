@@ -7,12 +7,12 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections: # A list of collections the CMS should be able to edit
 - name: "pages"
-    label: "Pages"
-    files:
-      - file: "content/_index.md"
-        label: "Home Page"
-        name: "home"
-        fields:
-          - {label: "Welcome", name: welcome, widget: object, fields: [
-              {label: "Title", name: "title", widget: string},
-              {label: "Tagline", name: "tagline", widget: "text"}]}
+  label: "Pages"
+  files:
+    - file: "content/_index.md"
+      label: "Home Page"
+      name: "home"
+      fields:
+        - {label: "Welcome", name: welcome, widget: object, fields: [
+            {label: "Title", name: "title", widget: string},
+            {label: "Tagline", name: "tagline", widget: "text"}]}
