@@ -10,7 +10,20 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>
-    CMS.registerPreviewStyle("../css/preview.css");
+    CMS.registerPreviewStyle("../css/styles.css");
+
+    var HomePreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+         return h('div', {"className": "page-section welcome"},
+          h('div', {"className": "container"},
+            h('h1', {"className": "welcome-title"}, entry.getIn(['data', 'welcome', 'title'])),
+            h('h4', {"className": "welcome-tagline"}, entry.getIn(['data', 'welcome', 'tagline'])),
+          )
+         );
+      }
+    });
+    CMS.registerPreviewTemplate("home", HomePreview);
   </script>
 </body>
 </html>
