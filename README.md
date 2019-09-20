@@ -4,7 +4,7 @@
 # About
 
 This Chartio theme Hugo demo site with Netlify CMS for basic editing content via web interface.
-You can check live version here [https://chartio-hugo.netlify.com](https://chartio-hugo.netlify.com)
+You can check live version here [https://chartio-hugo.netlify.com](https://chartio-hugo.netlify.com).
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ If you are on macOS and using Homebrew, you can install Hugo with the following 
 
 `brew install hugo`
 
-For other installition options check this [page](https://gohugo.io/getting-started/installing/)
+For other installition options check this [page](https://gohugo.io/getting-started/installing/).
 
 Clone repository:
 
@@ -22,7 +22,7 @@ Clone repository:
 
 After cloning the project
 
-- run `hugo server` to start dev server on http://localhost:1313/
+- run `hugo server` to start dev server on http://localhost:1313/.
 
 ## Editing CMS fields
 The Netlify CMS configuration is located in public/admin/config.yml. This is where you will configure the pages, fields, posts and settings that are editable by the CMS.
