@@ -1,0 +1,30 @@
+<div class="page-section">
+    <div class="container">
+        {{ range .services }}
+
+            <div class="content-item {% if service.icon_right %}content-item--image-right{% endif %}">
+                <div class="content-item__image">
+                    <img class="content-item__image-element" src="{{ .icon }}" alt="{{ .title }}">
+                </div>
+                <div class="content-item__text">
+                    <h2>{{ title }}</h2>
+                    {{ .description | markdownify }}
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-item__text">
+                    <blockquote>
+                        {{ .text | markdownify }}
+                    </blockquote>
+                    <a href="#" class="testimonial-item__link">See More Chartio Customers <i class="icon icon-long-arrow-right"></i></a>
+                </div>
+                <div class="testimonial-item__image">
+                    <img class="testimonial-item__image-element" src="{{ .image }}" alt="Chartio">
+                </div>
+            </div>
+
+
+        {{ end }}
+
+    </div>
+</div>
