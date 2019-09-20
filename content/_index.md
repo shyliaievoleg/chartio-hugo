@@ -29,5 +29,18 @@ what_we_do:
   name: TIM MILLER
   position: ST Data Advisor
   title: What can Data Advisors do for you?
+services:
+  - service:
+      description: >-
+        Recommend the best ways to model and control your data based on the
+        unique requirements of your organization
+      icon: /images/icon1.svg
+      title: Data Modeling
+    testimonials:
+      image: /images/logo-with-circles.svg
+      text: >-
+        Chartio’s Data Advisor team was instrumental in helping us model data
+        for our immediate needs and also begin future planning. An invaluable
+        resource to be able to call at any time.
 ---
 
