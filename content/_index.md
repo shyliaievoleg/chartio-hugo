@@ -36,7 +36,7 @@ services:
         unique requirements of your organization
       icon: /images/icon1.svg
       title: Data Modeling
-    testimonials:
+    testimonial:
       image: /images/logo-with-circles.svg
       text: >-
         Chartio’s Data Advisor team was instrumental in helping us model data
