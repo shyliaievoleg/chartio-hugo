@@ -63,6 +63,10 @@ services:
         questions, but also with any data related questions their organization
         may have.
 trainings:
+  timeline:
+    date: 1-3 days
+    ongoing: Ongoing
+    week: 1-3 weeks
   title: Personalized Onboarding and Training
   training_cards:
     - description: Live Trainings Customized Specifically to You and Your Data
