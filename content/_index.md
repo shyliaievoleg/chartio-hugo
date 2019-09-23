@@ -64,9 +64,9 @@ services:
         may have.
 trainings:
   timeline:
-    date: 1-3 days
+    days: 1-3 days
     ongoing: Ongoing
-    week: 1-3 weeks
+    weeks: 1-3 weeks
   title: Personalized Onboarding and Training
   training_cards:
     - description: Live Trainings Customized Specifically to You and Your Data
