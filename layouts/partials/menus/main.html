@@ -2,41 +2,28 @@
     <nav class="nav">
         <ul class="nav__list">
 
-            {{ range .Site.Menus.main }}
-                <li class="nav__item">
-                    <a href="#">
-                        Blog 2
-                    </a>
-                </li>
-            {{ end }}
-
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
                 {{ if .HasChildren }}
 
                     <li class="nav__item nav__item--dropdown">
-                        <a href="#" class="nav__link">
-                            {{ .Name }}
-                            Blog 1
-                        </a>
+                        <a href="#" class="nav__link">{{ .Name }}</a>
+
+                        <nav class="subnav">
+                            <ul class="subnav__list">
+
+                                {{ range .Children }}
+
+                                    <li class="subnav__item"><a href="{{ .URL }}" class="subnav__link">{{ .Name }}</a></li>
+
+                                {{ end }}
+
+                            </ul>
+                        </nav>
                     </li>
-                    <nav class="subnav">
-                        <ul class="subnav__list">
-
-                            {{ range .Children }}
-
-                                <li class="subnav__item"><a href="{{ .URL }}" class="subnav__link">{{ .Name }}</a></li>
-
-                            {{ end }}
-
-                        </ul>
-                    </nav>
                 {{ else }}
                     <li class="nav__item">
-                        <a href="{{ .URL }}">
-                            {{ .Name }}
-                            Blog 2
-                        </a>
+                        <a href="{{ .URL }}" class="nav__link">{{ .Name }}</a>
                     </li>
                 {{ end }}
             {{ end }}

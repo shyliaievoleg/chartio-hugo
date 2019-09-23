@@ -5,19 +5,6 @@ backend:
 media_folder: "static/images/" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/" # The src attribute for uploaded media will begin with /images/uploads
 
-menu:
-  main:
-  - identifier: about
-    name: about hugo
-    pre: <i class='fa fa-heart'></i>
-    url: /about/
-    weight: -110
-  - name: getting started
-    post: <span class='alert'>New!</span>
-    pre: <i class='fa fa-road'></i>
-    url: /getting-started/
-    weight: -100
-
 collections: # A list of collections the CMS should be able to edit
 - name: "pages"
   label: "Pages"
@@ -61,5 +48,22 @@ collections: # A list of collections the CMS should be able to edit
               {label: Days, name: days, widget: string},
               {label: Week, name: weeks, widget: string},
               {label: Ongoing, name: ongoing, widget: string}
+            ]}
+          ]}
+- name: "navs"
+  label: "Menus"
+  files:
+    - file: "content/navigations/_index.md"
+      label: "Footer Nav"
+      name: "footer_nav"
+      fields:
+        - {label: "Col", name: col, widget: object, fields: [
+            {label: "Title", name: title, widget: string},
+            {label: Menu Column, name: footer_col, widget: list, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Menu Item, name: footer_item, widget: list, fields: [
+                {label: Item Name, name: footer_item_name, widget: string},
+                {label: Item Link, name: footer_item_link, widget: string}
+              ]}
             ]}
           ]}

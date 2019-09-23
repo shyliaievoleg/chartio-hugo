@@ -2,3 +2,31 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Chartio Hugo with Netlify CMS"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "why_chartio"
+    name = "Why Chartio"
+    url = "/why-chartio/"
+    weight = -110
+
+  [[menu.main]]
+    identifier = "data_sources"
+    name = "Data Sources"
+    url = "/data-sources/"
+    weight = -100
+    parent = "why_chartio"
+
+  [[menu.main]]
+    identifier = "visual_sql"
+    name = "Visual SQL"
+    url = "/visual-sql/"
+    weight = -100
+    parent = "why_chartio"
+
+  [[menu.main]]
+    identifier = "pricing"
+    name = "Pricing"
+    url = "/pricing/"
+    weight = -100
