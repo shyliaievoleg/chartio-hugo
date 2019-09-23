@@ -34,13 +34,11 @@
                 {{ end }}
 
             </div>
-            {{/*
-                <div class="timeline">
-                    <span class="timeline__item timeline__item--days" style="border-color: {{ timeline.days.border_color }}">{{ section.timeline.days.text }}</span>
-                    <span class="timeline__item timeline__item--weeks" style="border-color: {{ timeline.weeks.border_color }}">{{ section.timeline.weeks.text }}</span>
-                    <span class="timeline__item timeline__item--ongoing" style="border-color: {{ timeline.ongoing.border_color }}">{{ section.timeline.ongoing.text }}</span>
-                </div>
-            */}}
+            <div class="timeline">
+                <span class="timeline__item timeline__item--days">{{ .timeline.days }}</span>
+                <span class="timeline__item timeline__item--weeks">{{ .timeline.weeks }}</span>
+                <span class="timeline__item timeline__item--ongoing">{{ .timeline.ongoing }}</span>
+            </div>
         </div>
     </div>
 </div>
