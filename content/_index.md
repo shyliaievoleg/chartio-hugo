@@ -62,5 +62,17 @@ services:
         Advisor to advise and assist, not only with account or support
         questions, but also with any data related questions their organization
         may have.
+trainings:
+  title: Personalized Onboarding and Training
+  training_cards:
+    - description: Live Trainings Customized Specifically to You and Your Data
+      icon: /images/icon-training1.svg
+  training_table:
+    - text: |-
+        * Project Kick-off Meeting
+        * Project Work Plan
+        * Team Organization
+        * V1 Scope
+      title: Planning
 ---
 
