@@ -45,8 +45,8 @@ collections: # A list of collections the CMS should be able to edit
               {label: Text, name: text, widget: markdown}
             ]},
             {label: Timeline, name: timeline, widget: object, fields: [
-              {label: Date, name: date, widget: string},
-              {label: Week, name: week, widget: string},
+              {label: Days, name: days, widget: string},
+              {label: Week, name: weeks, widget: string},
               {label: Ongoing, name: ongoing, widget: string}
             ]}
           ]}
