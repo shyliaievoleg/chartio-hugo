@@ -295,7 +295,8 @@ body {
     left: -68px; }
 
 .content-item__text {
-  width: 66%; }
+  width: 66%;
+  font-size: 1.31rem; }
 
 .content-item__text p {
   font-size: 1.31rem; }
