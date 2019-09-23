@@ -67,6 +67,10 @@ trainings:
   training_cards:
     - description: Live Trainings Customized Specifically to You and Your Data
       icon: /images/icon-training1.svg
+    - description: >-
+        Advanced topics, data governance trainings, 1:1 working sessions on your
+        data
+      icon: /images/icon-training2.svg
   training_table:
     - text: |-
         * Project Kick-off Meeting
