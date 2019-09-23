@@ -25,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
         - {label: Services, name: services, widget: list, fields: [
             {label: Service, name: service, widget: object, fields: [
               {label: Icon, name: icon, widget: image},
-              {label: Icon Right, name: icon_right, widget: boolean},
+              {label: Icon Right, name: icon_right, required: false, widget: boolean},
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: markdown}
             ]},
