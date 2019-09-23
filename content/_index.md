@@ -34,6 +34,10 @@ services:
       description: >-
         Recommend the best ways to model and control your data based on the
         unique requirements of your organization
+
+
+        Recommend the best ways to model and control your data based on the
+        unique requirements of your organization
       icon: /images/icon1.svg
       title: Data Modeling
     testimonial:
