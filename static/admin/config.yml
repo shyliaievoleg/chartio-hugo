@@ -5,6 +5,19 @@ backend:
 media_folder: "static/images/" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/" # The src attribute for uploaded media will begin with /images/uploads
 
+menu:
+  main:
+  - identifier: about
+    name: about hugo
+    pre: <i class='fa fa-heart'></i>
+    url: /about/
+    weight: -110
+  - name: getting started
+    post: <span class='alert'>New!</span>
+    pre: <i class='fa fa-road'></i>
+    url: /getting-started/
+    weight: -100
+
 collections: # A list of collections the CMS should be able to edit
 - name: "pages"
   label: "Pages"
