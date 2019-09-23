@@ -34,3 +34,14 @@ collections: # A list of collections the CMS should be able to edit
               {label: Text, name: text, widget: markdown}
             ]}
           ]}
+        - {label: Trainings, name: trainings, widget: object, fields: [
+            {label: Title, name: title, widget: text},
+            {label: Training Cards, name: training_cards, widget: list, fields: [
+              {label: Icon, name: icon, widget: image},
+              {label: Description, name: description, widget: text}
+            ]},
+            {label: Training Table, name: training_table, widget: list, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Text, name: text, widget: markdown}
+            ]}
+          ]}

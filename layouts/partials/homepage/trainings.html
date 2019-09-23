@@ -1,0 +1,39 @@
+<div class="page-section training">
+    <div class="container">
+        <h2 class="page-section__title">{{ .title }}</h2>
+        <div class="cols2">
+
+            {{ range .training_cards }}
+
+                <div class="col content-item content-item--with-border">
+                    <div class="content-item__image">
+                        <img class="content-item__image-element" src="{{ .icon }}" alt="{{ .description }}">
+                    </div>
+                    <div class="content-item__text">
+                        <p>{{ .description }}</p>
+                    </div>
+                </div>
+
+            {{ end }}
+
+        </div>
+        <div class="training__table">
+            <div class="cols4">
+
+                {{ range .training_table }}
+
+                    <div class="col content-box">
+                        <div class="content-box__title">
+                            <h3 class="content-box__title-element">{{ .title }}</h3>
+                        </div>
+                        <div class="content-box__text">
+                            {{ .text | markdownify }}
+                        </div>
+                    </div>
+
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
+</div>

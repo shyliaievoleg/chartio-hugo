@@ -3,12 +3,18 @@
 
         {{ range .services }}
 
-            <div class="content-item content-item--image-right">
+            <div class="content-item {{ with .service.icon_right }}content-item--image-right{{ end }}">
                 <div class="content-item__image">
                     <img class="content-item__image-element" src="{{ .service.icon }}" alt="{{ .service.title }}">
                 </div>
                 <div class="content-item__text">
-                    <h2>{{ .service.title }}</h2>
+
+                    {{ with .service.title }}
+
+                        <h2>{{ . }}</h2>
+
+                    {{ end }}
+
                     {{ .service.description | markdownify }}
                 </div>
             </div>
