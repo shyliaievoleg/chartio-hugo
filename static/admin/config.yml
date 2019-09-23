@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
         - {label: Menu Column, name: footer_col, widget: list, fields: [
           {label: Title, name: title, widget: string},
           {label: Menu Item, name: footer_item, widget: list, fields: [
-            {label: Item Name, name: footer_item_name, widget: string},
-            {label: Item Link, name: footer_item_link, widget: string}
+            {label: Item Name, name: name, widget: string},
+            {label: Item Link, name: link, widget: string}
           ]}
         ]}
