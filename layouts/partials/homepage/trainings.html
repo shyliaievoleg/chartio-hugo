@@ -3,7 +3,7 @@
         <h2 class="page-section__title">{{ .title }}</h2>
         <div class="cols2">
 
-            {{ range .training_cards }}
+            {{ range first 2 .training_cards }}
 
                 <div class="col content-item content-item--with-border">
                     <div class="content-item__image">
@@ -20,7 +20,7 @@
         <div class="training__table">
             <div class="cols4">
 
-                {{ range .training_table }}
+                {{ range first 4 .training_table }}
 
                     <div class="col content-box">
                         <div class="content-box__title">
@@ -34,6 +34,13 @@
                 {{ end }}
 
             </div>
+            {{/*
+                <div class="timeline">
+                    <span class="timeline__item timeline__item--days" style="border-color: {{ timeline.days.border_color }}">{{ section.timeline.days.text }}</span>
+                    <span class="timeline__item timeline__item--weeks" style="border-color: {{ timeline.weeks.border_color }}">{{ section.timeline.weeks.text }}</span>
+                    <span class="timeline__item timeline__item--ongoing" style="border-color: {{ timeline.ongoing.border_color }}">{{ section.timeline.ongoing.text }}</span>
+                </div>
+            */}}
         </div>
     </div>
 </div>
