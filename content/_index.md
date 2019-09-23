@@ -39,6 +39,7 @@ services:
         Recommend the best ways to model and control your data based on the
         unique requirements of your organization
       icon: /images/icon1.svg
+      icon_right: true
       title: Data Modeling
     testimonial:
       image: /images/logo-with-circles.svg
