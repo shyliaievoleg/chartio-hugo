@@ -28,6 +28,5 @@ footer_col:
       - link: '#'
         name: Customer Reviews
     title: customers
-  - title: Another col
 ---
 
