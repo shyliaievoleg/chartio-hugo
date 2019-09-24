@@ -1,13 +1,16 @@
----
 logo: /images/logo.svg
 footer_col:
   - footer_item:
       - link: '#'
         name: Data Sources
     title: WHY CHARTIO
-  - title: HELP CENTER
-  - title: BLOG
-  - title: ABOUT US
-  - title: CUSTOMERS
----
-
+  - footer_item:
+      - link: '#'
+        name: Data Sources
+      - link: '#'
+        name: Data Sources
+    title: WHY CHARTIO 2
+  - footer_item:
+      - link: '#'
+        name: Docs
+    title: WHY CHARTIO 3
