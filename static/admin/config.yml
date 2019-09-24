@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
         - {label: How To Use, name: how_to_use, widget: object, fields: [
             {label: Title, name: title, widget: string},
             {label: Placeholder Image, name: image, widget: image},
-            {label: Video Link, name: video, widget: string},
+            {label: Video Link, name: video, widget: file},
           ]}
 - name: "navs"
   label: "Menus"
