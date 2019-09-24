@@ -5,9 +5,14 @@ footer_col:
         name: Data Sources
       - link: '#'
         name: Visual SQL
+      - link: '#'
+        name: Data Sharing
     title: WHY CHARTIO
   - footer_item:
       - link: '#'
         name: Docs
+      - link: '#'
+        name: Getting Started
     title: HELP CENTER
 ---
+
