@@ -1,13 +1,12 @@
+
 <footer class="footer">
     <div class="footer-top">
         <div class="container">
-            <a href="#" class="logo logo--footer"><img src="images/logo.svg" alt="Chartio"></a>
+            <a href="#" class="logo logo--footer"><img src="{{.Site.Data.footer.footer.logo}}" alt="Chartio"> </a>
             <div class="cols5">
 
                 <!-- Footer Nav -->
-                {{ with .Site.GetPage "/footer" }}
-                    {{ partial "footer/footer-nav" .Params }}
-                {{ end }}
+                {{ partial "footer/footer-nav" .Site.Data.footer.footer }}
 
             </div>
         </div>
