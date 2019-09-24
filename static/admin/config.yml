@@ -69,3 +69,17 @@ collections: # A list of collections the CMS should be able to edit
             {label: Item Link, name: link, widget: string}
           ]}
         ]}
+- name: "site"
+  label: "Site"
+  files:
+    - file: "content/footer/_index.md"
+      label: "Footer"
+      name: "footer"
+      fields:
+        - {label: Menu Column, name: footer_col, widget: list, fields: [
+          {label: Title, name: title, widget: string},
+          {label: Menu Item, name: footer_item, widget: list, fields: [
+            {label: Item Name, name: name, widget: string},
+            {label: Item Link, name: link, widget: string}
+          ]}
+        ]}
