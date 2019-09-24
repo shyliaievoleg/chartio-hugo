@@ -47,21 +47,6 @@ services:
         Chartio’s Data Advisor team was instrumental in helping us model data
         for our immediate needs and also begin future planning. An invaluable
         resource to be able to call at any time.
-  - service:
-      description: >-
-        Personal assistant All our enterprise customers have an assigned Data
-        Advisor to advise and assist, not only with account or support
-        questions, but also with any data related questions their organization
-        may have.
-      icon: /images/icon2.svg
-      title: Data Modeling 2
-    testimonial:
-      image: /images/logo-with-circles.svg
-      text: >-
-        Personal assistant All our enterprise customers have an assigned Data
-        Advisor to advise and assist, not only with account or support
-        questions, but also with any data related questions their organization
-        may have.
 trainings:
   timeline:
     days: 1-3 days
@@ -83,3 +68,4 @@ trainings:
         * V1 Scope
       title: Planning
 ---
+
