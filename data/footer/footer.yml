@@ -14,3 +14,10 @@ footer_col:
       - link: '#'
         name: Docs
     title: WHY CHARTIO 3
+footer_btns:
+  - link: '#'
+    title: '222 Kearny St #525 SF, CA 94108'
+  - link: 'mailto:HELLO@CHARTIO.COM'
+    title: HELLO@CHARTIO.COM
+  - link: '#'
+    title: GET A DEMO
