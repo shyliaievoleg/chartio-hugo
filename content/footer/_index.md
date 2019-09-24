@@ -4,5 +4,6 @@ footer_col:
   - title: HELP CENTER
   - title: BLOG
   - title: ABOUT US
+  - title: CUSTOMERS
 ---
 
