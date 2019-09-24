@@ -14,5 +14,9 @@ footer_col:
       - link: '#'
         name: Getting Started
     title: HELP CENTER
+  - footer_item:
+      - link: '#'
+        name: Company News & Events
+    title: Blog
 ---
 
