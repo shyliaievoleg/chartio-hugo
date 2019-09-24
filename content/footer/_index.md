@@ -1,4 +1,5 @@
 ---
+logo: /images/logo.svg
 footer_col:
   - footer_item:
       - link: '#'
