@@ -83,4 +83,3 @@ trainings:
         * V1 Scope
       title: Planning
 ---
-
