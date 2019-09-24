@@ -1,12 +1,14 @@
+<!-- Set footer data to variable -->
+{{ $footer :=  .Site.Data.footer.footer }}
 
 <footer class="footer">
     <div class="footer-top">
         <div class="container">
-            <a href="#" class="logo logo--footer"><img src="{{.Site.Data.footer.footer.logo}}" alt="Chartio"> </a>
+            <a href="#" class="logo logo--footer"><img src="{{ $footer.logo }}" alt="Chartio"> </a>
             <div class="cols5">
 
                 <!-- Footer Nav -->
-                {{ partial "footer/footer-nav" .Site.Data.footer.footer }}
+                {{ partial "footer/footer-nav" $footer }}
 
             </div>
         </div>
