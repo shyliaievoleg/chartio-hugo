@@ -67,5 +67,9 @@ trainings:
         * Team Organization
         * V1 Scope
       title: Planning
+how_to_use:
+  image: /images/img-video.png
+  title: Find out How Easy Chartio Is to use
+  video: /images/explorer-moving.mp4
 ---
 
