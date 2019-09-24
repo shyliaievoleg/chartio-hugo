@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Chartio Hugo with Netlify CMS"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+copyright = "&copy; 2019 Chartio. All rights reserved."
 
 [menu]
 

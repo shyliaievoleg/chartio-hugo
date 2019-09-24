@@ -5,7 +5,7 @@
             <div class="cols5">
 
                 <!-- Footer Nav -->
-                {{ with .Site.GetPage "section" "navigations" }}
+                {{ with .Site.GetPage "/navigations" }}
                     {{ partial "navigations/footer-nav" .Params }}
                 {{ end }}
 
@@ -20,7 +20,7 @@
     <div class="footer-bottom">
         <div class="container">
             <p class="copyright">
-                &copy; 2019 Chartio. All rights reserved.
+                {{ .Site.Copyright | safeHTML }}
             </p>
             <div class="policy-links">
                 <a href="#" class="policy-link">Terms of Service</a>
