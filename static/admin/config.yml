@@ -55,20 +55,6 @@ collections: # A list of collections the CMS should be able to edit
             {label: Placeholder Image, name: image, widget: image},
             {label: Video Link, name: video, widget: file},
           ]}
-- name: "navs"
-  label: "Menus"
-  files:
-    - file: "content/navigations/_index.md"
-      label: "Footer Nav"
-      name: "footer_nav"
-      fields:
-        - {label: Menu Column, name: footer_col, widget: list, fields: [
-          {label: Title, name: title, widget: string},
-          {label: Menu Item, name: footer_item, widget: list, fields: [
-            {label: Item Name, name: name, widget: string},
-            {label: Item Link, name: link, widget: string}
-          ]}
-        ]}
 - name: "site"
   label: "Site"
   files:
