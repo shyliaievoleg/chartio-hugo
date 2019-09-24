@@ -62,7 +62,8 @@ collections: # A list of collections the CMS should be able to edit
       label: "Footer"
       name: "footer"
       fields:
-        - {label: Footer Nav Columns, name: footer_col, widget: list, fields: [
+        - {label: Logo, name: logo, widget: image}
+        - {label: Footer Nav Column, name: footer_col, widget: list, fields: [
           {label: Title, name: title, widget: string},
           {label: Footer Nav Item, name: footer_item, widget: list, fields: [
             {label: Item Name, name: name, widget: string},
