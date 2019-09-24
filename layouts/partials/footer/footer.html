@@ -4,8 +4,10 @@
             <a href="#" class="logo logo--footer"><img src="images/logo.svg" alt="Chartio"></a>
             <div class="cols5">
 
-                <!-- Main Nav -->
-                {{ partial "navigations/footer-nav" .Params }}
+                <!-- Footer Nav -->
+                {{ with .Site.GetPage "section" "navigations" }}
+                    {{ partial "navigations/footer-nav" .Params }}
+                {{ end }}
 
             </div>
         </div>
