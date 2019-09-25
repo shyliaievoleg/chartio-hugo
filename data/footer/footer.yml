@@ -26,3 +26,16 @@ policy_links:
     title: Terms of Service
   - link: '#'
     title: Privacy Policy
+social_links:
+  - icon: fa fa-linkedin
+    link: '#'
+    title: Linkedin
+  - icon: fa fa-twitter
+    link: '#'
+    title: Twitter
+  - icon: fa fa-facebook
+    link: '#'
+    title: Facebook
+  - icon: fa fa-youtube-play
+    link: '#'
+    title: Youtube
