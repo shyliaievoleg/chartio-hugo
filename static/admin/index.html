@@ -42,8 +42,8 @@
                                 h('img', {"className": "content-item__image-element", src: entry.getIn(['data', 'service', 'icon'])} ),
                             ),
                             h('div', {"className": "content-item__text"},
-                                h('h2', {}, entry.getIn(['data', 'services', 'service', 'title'])),
-                                h('div', {}, entry.getIn(['data', 'services', 'service', 'description'])),
+                                h('h2', {}, entry.getIn(['data', 'services', 'title'])),
+                                h('div', {}, entry.getIn(['data', 'service', 'description'])),
                             ),
                         ),
                     )
