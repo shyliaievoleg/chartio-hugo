@@ -1,6 +1,5 @@
 ---
 welcome:
-  body: sdfgdfhfhs
   tagline: >-
     Chartio’s Data Advisors leverage our expertise in data analytics from
     working with hundreds of data-driven or ganizations to help our customers
@@ -78,4 +77,3 @@ how_to_use:
   title: Find out How Easy Chartio Is to use
   video: /images/explorer-moving.mp4
 ---
-

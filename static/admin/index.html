@@ -10,11 +10,12 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>
-    CMS.registerPreviewStyle("../css/styles.css?v=1");
+    CMS.registerPreviewStyle("../css/styles.css?v=3");
 
     var HomePreview = createClass({
         render: function() {
             var entry = this.props.entry;
+
             return h('div', {},
                 h('div', {"className": "page-section welcome"},
                     h('div', {"className": "container"},
@@ -37,29 +38,84 @@
                 ),
                 h('div', {"className": "page-section"},
                     h('div', {"className": "container"},
-                    this.props.widgetsFor('services').map(function(service, index) {
-                        return h('div', {key: index},
-                            h('div', {"className": "content-item"},
-                                h('div', {"className": "content-item__image"},
-                                    h('img', {"className": "content-item__image-element", src: service.getIn(['data', 'service', 'icon'])} ),
-                                ),
-                                h('div', {"className": "content-item__text"},
-                                    h('h2', {}, service.getIn(['data', 'service', 'title'])),
-                                    h('div', {}, service.getIn(['data', 'service', 'description'])),
-                                )
-                            ),
-                            h('div', {"className": "testimonial-item"},
-                                h('div', {"className": "testimonial-item__text"},
-                                    h('blockquote', {}, service.getIn(['data', 'testimonial', 'text'])),
-                                    h('a', {"className": "testimonial-item__link", href: "#"},
-                                        h('i', {"className": "icon icon-long-arrow-right"}),
+                        this.props.widgetsFor('services').map(function(service, index) {
+                            return h('div', {key: index},
+                                h('div', {"className": "content-item"},
+                                    h('div', {"className": "content-item__image"},
+                                        h('img', {"className": "content-item__image-element", src: service.getIn(['data', 'service', 'icon'])} ),
                                     ),
+                                    h('div', {"className": "content-item__text"},
+                                        h('h2', {}, service.getIn(['data', 'service', 'title'])),
+                                        h('div', {}, service.getIn(['data', 'service', 'description'])),
+                                    )
                                 ),
-                                h('div', {"className": "testimonial-item__image"},
-                                    h('img', {"className": "testimonial-item__image-element", src: service.getIn(['data', 'testimonial', 'image'])} ),
+                                h('div', {"className": "testimonial-item"},
+                                    h('div', {"className": "testimonial-item__text"},
+                                        h('blockquote', {}, service.getIn(['data', 'testimonial', 'text'])),
+                                        h('a', {"className": "testimonial-item__link", href: "#"},
+                                            "See More Chartio Customers ",
+                                            h('i', {"className": "icon icon-long-arrow-right"}),
+                                        ),
+                                    ),
+                                    h('div', {"className": "testimonial-item__image"},
+                                        h('img', {"className": "testimonial-item__image-element", src: service.getIn(['data', 'testimonial', 'image'])} ),
+                                    )
                                 )
                             )
-                        )})
+                        })
+                    )
+                ),
+                h('div', {"className": "page-section training"},
+                    h('div', {"className": "container"},
+                        h('h2', {"className": "page-section__title"}, entry.getIn(['data', 'trainings', 'title'])),
+                        h('div', {"className": "cols2"},
+                            this.props.widgetsFor('trainings').getIn(['data', 'training_cards']).map(function(card, index) {
+                                return h('div', {"className": "col content-item content-item--with-border", key: index},
+                                    h('div', {"className": "content-item__image"},
+                                        h('img', {"className": "content-item__image-element", src: card.getIn(['icon'])} ),
+                                    ),
+                                    h('div', {"className": "content-item__text"},
+                                        h('p', {}, card.getIn(['description'])),
+                                    )
+                                )
+                            })
+                        ),
+                        h('div', {"className": "training__table"},
+                            h('div', {"className": "cols4"},
+                                this.props.widgetsFor('trainings').getIn(['data', 'training_table']).map(function(col, index) {
+                                    return h('div', {"className": "col content-box", key: index},
+                                        h('div', {"className": "content-box__title"},
+                                            h('h3', {"className": "content-box__title-element"}, col.getIn(['title'])),
+                                        ),
+                                        h('div', {"className": "content-box__text"},
+                                            col.getIn(['text'])
+                                        )
+                                    )
+                                })
+                            ),
+                            h('div', {"className": "timeline"},
+                                h('span', {"className": "timeline__item timeline__item--days"}, entry.getIn(['data', 'trainings', 'timeline', 'days'])),
+                                h('span', {"className": "timeline__item timeline__item--weeks"}, entry.getIn(['data', 'trainings', 'timeline', 'weeks'])),
+                                h('span', {"className": "timeline__item timeline__item--ongoing"}, entry.getIn(['data', 'trainings', 'timeline', 'ongoing']))
+                            )
+                        ),
+                        h('div', {"className": "page-section how-to-use"},
+                            h('div', {"className": "container"},
+                                h('div', {"className": "how-to-use__text"},
+                                    h('h2', {}, entry.getIn(['data', 'how_to_use', 'title'])),
+                                    h('form', {"className": "email-form"},
+                                        h('input', {"className": "email-form__input", "type": "text", "placeholder": "Enter your contact email"}),
+                                        h('button', {"className": "btn btn--secondary email-form__submit", "type": "submit"}, "Get Started Free"),
+                                    )
+                                ),
+                                h('div', {"className": "how-to-use__video-holder"},
+                                    h('div', {"className": "video"},
+                                        h('img', {"className": "hero-image", src: entry.getIn(['data', 'how_to_use', 'image'])}),
+                                        h('a', {"className": "video__play-btn", "href": "#"}, "Play"),
+                                    )
+                                )
+                            )
+                        ),
                     )
                 )
             );
