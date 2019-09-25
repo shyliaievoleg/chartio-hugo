@@ -28,8 +28,13 @@
                 {{ .Site.Copyright | safeHTML }}
             </p>
             <div class="policy-links">
-                <a href="#" class="policy-link">Terms of Service</a>
-                <a href="#" class="policy-link">Privacy Policy</a>
+
+                {{ range first 3 $footer.policy_links }}
+
+                    <a href="{{ .link }}" class="policy-link">{{ .title }}</a>
+
+                {{ end }}
+
             </div>
             <div class="social-links">
                 <a href="#" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
