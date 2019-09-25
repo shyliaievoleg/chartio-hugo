@@ -21,3 +21,8 @@ footer_btns:
     title: HELLO@CHARTIO.COM
   - link: '#'
     title: GET A DEMO
+policy_links:
+  - link: '#'
+    title: Terms of Service
+  - link: '#'
+    title: Privacy Policy
