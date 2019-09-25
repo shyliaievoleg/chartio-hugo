@@ -2,31 +2,39 @@
     <nav class="nav">
         <ul class="nav__list">
 
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-                {{ if .HasChildren }}
 
-                    <li class="nav__item nav__item--dropdown">
-                        <a href="#" class="nav__link">{{ .Name }}</a>
+            <!-- Get menu items from config file -->
+            {{/*
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
 
-                        <nav class="subnav">
-                            <ul class="subnav__list">
+                        <li class="nav__item nav__item--dropdown">
+                            <a href="#" class="nav__link">{{ .Name }}</a>
 
-                                {{ range .Children }}
+                            <nav class="subnav">
+                                <ul class="subnav__list">
 
-                                    <li class="subnav__item"><a href="{{ .URL }}" class="subnav__link">{{ .Name }}</a></li>
+                                    {{ range .Children }}
 
-                                {{ end }}
+                                        <li class="subnav__item"><a href="{{ .URL }}" class="subnav__link">{{ .Name }}</a></li>
 
-                            </ul>
-                        </nav>
-                    </li>
-                {{ else }}
-                    <li class="nav__item">
-                        <a href="{{ .URL }}" class="nav__link">{{ .Name }}</a>
-                    </li>
+                                    {{ end }}
+
+                                </ul>
+                            </nav>
+                        </li>
+
+                    {{ else }}
+
+                        <li class="nav__item">
+                            <a href="{{ .URL }}" class="nav__link">{{ .Name }}</a>
+                        </li>
+
+                    {{ end }}
                 {{ end }}
-            {{ end }}
+            */}}
+            <!-- /Get menu items from config file -->
         </ul>
     </nav>
 </div>
