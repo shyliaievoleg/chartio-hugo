@@ -11,3 +11,10 @@ main_nav:
     title: Pricing
   - link: '#'
     title: Blog
+  - link: №
+    main_subnav:
+      - link: '"'
+        title: Data Sources
+      - link: №
+        title: Visual SQL
+    title: Customers
