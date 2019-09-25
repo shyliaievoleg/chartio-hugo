@@ -3,9 +3,11 @@ main_nav:
   - link: '#'
     main_subnav:
       - link: '#'
-        title: Data Sources
+        title: Why Chartio?
       - link: '#'
-        title: Visual SQL
+        title: Success Stories
     title: Why Chartio
+  - link: '#'
+    title: Pricing
   - link: '#'
     title: Blog
