@@ -1,1 +1,11 @@
 logo: /images/logo.svg
+main_nav:
+  - link: '#'
+    main_subnav:
+      - link: '#'
+        title: Data Sources
+      - link: '#'
+        title: Visual SQL
+    title: Why Chartio
+  - link: '#'
+    title: Blog
