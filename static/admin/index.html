@@ -37,14 +37,14 @@
                 ),
                 h('div', {"className": "page-section"},
                     h('div', {"className": "container"},
-                    (entry.getIn(["data", "services"]) || []).map(function(service, index) {
+                    entry.getIn(["data", "services"]).map(function(service, index) {
                         return h('div', {key: index}, {"className": "content-item"},
                             h('div', {"className": "content-item__image"},
-                                h('img', {"className": "content-item__image-element", src: service.getIn(['data', 'service', 'icon'])} ),
+                                h('img', {"className": "content-item__image-element", src: service.get('icon')} ),
                             ),
                             h('div', {"className": "content-item__text"},
-                                h('h2', {}, service.getIn(['data', 'service', 'title'])),
-                                h('div', {}, service.getIn(['data', 'service', 'description'])),
+                                h('h2', {}, service.getIn('title')),
+                                h('div', {}, service.getIn('description')),
                             ),
                         );
                     }),
