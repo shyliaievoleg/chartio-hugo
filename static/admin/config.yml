@@ -58,6 +58,11 @@ collections: # A list of collections the CMS should be able to edit
 - name: "site"
   label: "Site"
   files:
+    - file: "data/header/header.yml"
+      label: "Header"
+      name: "header"
+      fields:
+        - {label: Logo, name: logo, widget: image}
     - file: "data/footer/footer.yml"
       label: "Footer"
       name: "footer"
