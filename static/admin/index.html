@@ -40,6 +40,7 @@
                         h('div', {"className": "content-item"},
                             h('div', {"className": "content-item__image"},
                                 h('img', {"className": "content-item__image-element", src: entry.getIn(['data', 'services', 'service', 'icon'])} ),
+                                h('img', {"className": "what-we-do__image-element", src: entry.getIn(['data', 'what_we_do', 'image'])} ),
                             ),
                             h('div', {"className": "content-item__text"},
                                 h('h2', {}, entry.getIn(['data', 'services', 'service', 'title'])),
