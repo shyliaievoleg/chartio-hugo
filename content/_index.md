@@ -67,6 +67,11 @@ trainings:
         * Team Organization
         * V1 Scope
       title: Planning
+    - text: |-
+        * V1 Charts Setup for Primary Use Cases and Best Practices
+        * V1 Product Training
+        * V2 Spec Reporting Requirements
+      title: Setup
 how_to_use:
   image: /images/img-video.png
   title: Find out How Easy Chartio Is to use
