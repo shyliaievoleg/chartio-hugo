@@ -74,11 +74,11 @@ collections: # A list of collections the CMS should be able to edit
             {label: Button Title, name: title, widget: string},
             {label: Button Link, name: link, widget: string}
           ]}
-        - {label: Policy Links, name: policy_links, widget: list, fields: [
+        - {label: Policy Link, name: policy_links, widget: list, fields: [
             {label: Title, name: title, widget: string},
             {label: Link, name: link, widget: string}
           ]}
-        - {label: Social Links, name: social_links, widget: list, fields: [
+        - {label: Social Link, name: social_links, widget: list, fields: [
             {label: Title, name: title, widget: string},
             {label: Link, name: link, widget: string},
             {label: Fontawesome Icon, name: icon, widget: string}
