@@ -63,12 +63,12 @@ collections: # A list of collections the CMS should be able to edit
       name: "header"
       fields:
         - {label: Logo, name: logo, widget: image}
-        - {label: Main Nav, name: main_nav, widget: list, fields: [
+        - {label: Menu, name: main_nav, widget: list, fields: [
             {label: Title, name: title, widget: string},
             {label: Link, name: link, widget: string},
-            {label: Main Subnav, name: main_subnav, widget: list, required: false, fields: [
-              {label: Subnav Title, name: title, widget: string},
-              {label: Subnav Link, name: link, widget: string}
+            {label: Submenu, name: main_subnav, widget: list, required: false, fields: [
+              {label: Submenu Title, name: title, widget: string},
+              {label: Submenu Link, name: link, widget: string}
             ]}
           ]}
     - file: "data/footer/footer.yml"

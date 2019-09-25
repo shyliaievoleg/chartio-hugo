@@ -2,39 +2,34 @@
     <nav class="nav">
         <ul class="nav__list">
 
+            {{ range .main_nav }}
+                {{ if .main_subnav }}
 
-            <!-- Get menu items from config file -->
-            {{/*
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="{{ .link }}" class="nav__link">{{ .title }}</a>
 
-                        <li class="nav__item nav__item--dropdown">
-                            <a href="#" class="nav__link">{{ .Name }}</a>
+                        <nav class="subnav">
+                            <ul class="subnav__list">
 
-                            <nav class="subnav">
-                                <ul class="subnav__list">
+                                {{ range .main_subnav }}
 
-                                    {{ range .Children }}
+                                    <li class="subnav__item"><a href="{{ .link }}" class="subnav__link">{{ .title }}</a></li>
 
-                                        <li class="subnav__item"><a href="{{ .URL }}" class="subnav__link">{{ .Name }}</a></li>
+                                {{ end }}
 
-                                    {{ end }}
+                            </ul>
+                        </nav>
+                    </li>
 
-                                </ul>
-                            </nav>
-                        </li>
+                {{ else }}
 
-                    {{ else }}
+                    <li class="nav__item">
+                        <a href="{{ .link }}" class="nav__link">{{ .title }}</a>
+                    </li>
 
-                        <li class="nav__item">
-                            <a href="{{ .URL }}" class="nav__link">{{ .Name }}</a>
-                        </li>
-
-                    {{ end }}
                 {{ end }}
-            */}}
-            <!-- /Get menu items from config file -->
+            {{ end }}
+
         </ul>
     </nav>
 </div>
