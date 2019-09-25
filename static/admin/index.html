@@ -13,30 +13,43 @@
     CMS.registerPreviewStyle("../css/styles.css?v=1");
 
     var HomePreview = createClass({
-      render: function() {
-        var entry = this.props.entry;
-        return h('div', {},
-          h('div', {"className": "page-section welcome"},
-            h('div', {"className": "container"},
-              h('h1', {"className": "welcome-title"}, entry.getIn(['data', 'welcome', 'title'])),
-              h('h4', {"className": "welcome-tagline"}, entry.getIn(['data', 'welcome', 'tagline']))
-            )
-          ),
-          h('div', {"className": "page-section what-we-do"},
-            h('div', {"className": "container"},
-              h('h1', {"className": "page-section__title"}, entry.getIn(['data', 'what_we_do', 'title'])),
-              h('div', {"className": "what-we-do__description"}, entry.getIn(['data', 'what_we_do', 'description'])),
-              h('div', {"className": "what-we-do__image"},
-                h('img', {"className": "what-we-do__image-element", src: entry.getIn(['data', 'what_we_do', 'image'])} ),
-                h('div', {"className": "what-we-do__image-caption"},
-                  h('strong', {}, entry.getIn(['data', 'what_we_do', 'name'])),
-                  h('span', {}, entry.getIn(['data', 'what_we_do', 'position'])),
+        render: function() {
+            var entry = this.props.entry;
+            return h('div', {},
+                h('div', {"className": "page-section welcome"},
+                    h('div', {"className": "container"},
+                        h('h1', {"className": "welcome-title"}, entry.getIn(['data', 'welcome', 'title'])),
+                        h('h4', {"className": "welcome-tagline"}, entry.getIn(['data', 'welcome', 'tagline']))
+                    )
                 ),
-              ),
-            )
-          )
-        );
-      }
+                h('div', {"className": "page-section what-we-do"},
+                    h('div', {"className": "container"},
+                        h('h1', {"className": "page-section__title"}, entry.getIn(['data', 'what_we_do', 'title'])),
+                        h('div', {"className": "what-we-do__description"}, entry.getIn(['data', 'what_we_do', 'description'])),
+                        h('div', {"className": "what-we-do__image"},
+                            h('img', {"className": "what-we-do__image-element", src: entry.getIn(['data', 'what_we_do', 'image'])} ),
+                            h('div', {"className": "what-we-do__image-caption"},
+                                h('strong', {}, entry.getIn(['data', 'what_we_do', 'name'])),
+                                h('span', {}, entry.getIn(['data', 'what_we_do', 'position'])),
+                            ),
+                        ),
+                    )
+                ),
+                h('div', {"className": "page-section"},
+                    h('div', {"className": "container"},
+                        h('div', {"className": "content-item"},
+                            h('div', {"className": "content-item__image"},
+                                h('img', {"className": "content-item__image-element", src: entry.getIn(['data', 'services', 'service', 'icon'])} ),
+                            ),
+                            h('div', {"className": "content-item__text"},
+                                h('h2', {}, entry.getIn(['data', 'services', 'service', 'title'])),
+                                h('div', {}, entry.getIn(['data', 'services', 'service', 'description'])),
+                            ),
+                        ),
+                    )
+                )
+            );
+        }
     });
 
     CMS.registerPreviewTemplate("home", HomePreview);
