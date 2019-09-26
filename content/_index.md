@@ -64,13 +64,13 @@ trainings:
         data
       icon: /images/icon-training2.svg
   training_table:
-    - text: |-
+    - body: |-
         * Project Kick-off Meeting
         * Project Work Plan
         * Team Organization
         * V1 Scope
       title: Planning
-    - text: |-
+    - body: |-
         * V1 Charts Setup for Primary Use Cases and Best Practices
         * V1 Product Training
         * V2 Spec Reporting Requirements
