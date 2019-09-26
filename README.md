@@ -27,6 +27,9 @@ After cloning the project
 ## Editing CMS fields
 The Netlify CMS configuration is located in public/admin/config.yml. This is where you will configure the pages, fields, posts and settings that are editable by the CMS.
 
+- to start using CMS on local server, go on http://localhost:1313/admin paste site URl https://chartio-hugo.netlify.com/ and authorize.
+- or go to CMS https://chartio-hugo.netlify.com/admin.
+
 Find out more in the [Netlify CMS Docs](https://www.netlifycms.org/docs).
 
 
