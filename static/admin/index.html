@@ -26,7 +26,7 @@
                 h('div', {"className": "page-section what-we-do"},
                     h('div', {"className": "container"},
                         h('h1', {"className": "page-section__title"}, entry.getIn(['data', 'what_we_do', 'title'])),
-                        h('div', {"className": "what-we-do__description"}, entry.getIn(['data', 'what_we_do', 'body'])),
+                        h('div', {"className": "what-we-do__description"}, this.props.widgetsFor('what_we_do').getIn(['widgets', 'body'])),
                         h('div', {"className": "what-we-do__image"},
                             h('img', {"className": "what-we-do__image-element", src: entry.getIn(['data', 'what_we_do', 'image'])} ),
                             h('div', {"className": "what-we-do__image-caption"},
