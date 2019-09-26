@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="page-section__title">{{.title}}</h2>
         <div class="what-we-do__description">
-            {{.description | markdownify }}
+            {{.body | markdownify }}
         </div>
         <div class="what-we-do__image">
             <img class="what-we-do__image-element" src="{{ .image }}" alt="{{ .name }}">
