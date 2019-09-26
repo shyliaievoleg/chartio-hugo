@@ -6,7 +6,7 @@ welcome:
     implement and succeed in their data analytics strategies.
   title: Data Advisors via CMS
 what_we_do:
-  description: >-
+  body: >-
     ### Our collective experience
 
 
