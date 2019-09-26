@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
             ]},
             {label: Training Table, name: training_table, widget: list, fields: [
               {label: Title, name: title, widget: string},
-              {label: Text, name: text, widget: markdown}
+              {label: Text, name: body, widget: markdown}
             ]},
             {label: Timeline, name: timeline, widget: object, fields: [
               {label: Days, name: days, widget: string},
